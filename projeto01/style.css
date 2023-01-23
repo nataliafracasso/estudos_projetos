@@ -1,0 +1,129 @@
+@charset "UFT-8";
+*{
+    padding: 0px;
+    margin: 0px;
+}
+ body html{
+    min-height: 100vh;
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+header{
+    background-color: black;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+    color: white;
+}
+header h1{
+    font-size: 3em;
+    font-variant: small-caps;
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+header p{
+    font-size: 1.5em;
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+.titulopadrao{
+    padding: 45px 10px 25px;
+    font-size: 1.5em;
+}
+.titulocenter{
+    padding: 45px 25px 20px;
+    font-size: 1.7em;
+    text-align: center;
+}
+.fontpadrao{
+    padding: 10px 35px 55px 35px;
+    text-align: justify;
+    font-size: 1.4em;
+    line-height: 2em;
+    text-indent: 8px;
+}
+.lista{
+    list-style-position: inside;
+    padding: 10px;
+}
+section#img{
+    background: black url(imagem/foto03.jpg) center center no-repeat fixed;
+    background-size: cover;
+    box-shadow: 0px 0px 4px inset rgba(0, 0, 0, 0.801);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+section#img aside{
+    display: inline-block;
+    background-color: rgba(119, 136, 153, 0.74);
+    background-position: fixed;
+    box-shadow: 0px 0px 3px inset rgba(0, 0, 0, 0.329);
+    color: white;
+    font-size: 1.4em;
+    line-height: 2em;
+    text-indent: 5px;
+    text-align: justify;
+    margin-left: 30px;
+    padding: 10px;
+    width: 320px;
+    height: 310px;   
+}
+section#img aside h2{
+    font-size:1.2em;
+    padding-top: 10px;  
+}
+section#img02{
+    background: black url(imagem/foto04.jpg) center center no-repeat fixed;
+    background-size: cover;
+    box-shadow: 0px 0px 4px inset rgba(0, 0, 0, 0.466);
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+section#img02 aside{
+    display: inline-block;
+    background-color: rgba(119, 136, 153, 0.349);
+    background-position: fixed;
+    box-shadow: 0px 0px 3px inset rgba(0, 0, 0, 0.233);
+    color: white;
+    font-size: 1.4em;
+    line-height: 2em;
+    text-indent: 5px;
+    text-align: justify;
+    margin-left: 40px;
+    padding: 10px;
+    width: 320px;
+    height: 250px;   
+}
+abbr{
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;   
+}
+section#personalizado{
+    background-color: #86C8BC;
+    box-shadow: 0px 0px 3px inset rgba(0, 0, 0, 0.308);
+}
+footer{
+    background-color: black;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-variant: small-caps;
+}
+footer h2{
+    font-size: 1.4em;
+    padding: 5px;
+}
+footer p{
+    font-size: 1.2em;
+    padding-bottom: 5px;
+}
