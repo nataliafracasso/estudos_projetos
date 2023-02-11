@@ -37,15 +37,18 @@
 }
 
 
-body{
+body, html{
    background-color: var(--cor02);
    font-family: var(--font-family);
+   height: 100vh;
+   width: 98vh;
 }
 main{
     position: relative;
     padding-top: 20px;
     padding-bottom: 10px;
     height: 100vh;
+    width: 98vw;
 }
 section{
     position: absolute;
@@ -56,7 +59,7 @@ section{
     width: 350px;
     height: 635px;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 10px;
     transform: translate(-50%,-50%);
 }
 div#img{
@@ -68,6 +71,7 @@ div#img{
     height: 250px;
 }
 div#conteudo{
+    display: block;
     color: var(--cor04);
     padding: 20px;
     font-size:14px;
@@ -86,9 +90,10 @@ p#destaque{
 div#conteudo >p{
    text-align: justify;
    line-height: 1.6em;
+   margin: auto;
 }
 div#valor {
-    
+    display: block;
     color: var(--cor03);
     padding: 0px 15px 10px 15px;
 }
@@ -126,25 +131,6 @@ div#valor > button:hover{
     background-color: var(--cor06);
 }
 /*Tela desktop*/
-@media screen and (min-width:900px){
-    
-    section{
-        width: 55vw;
-        height: 450px;
-    }
-    div#img{
-        float: left;
-        width: 50%;
-        height: 100%;
-        background: white url(imagens/image-product-desktop.jpg);
-        background-position: center center;
-        background-repeat: no repeat;
-        background-size: cover;
-    }
-    
-    
-}
 
 
-
-
+        
