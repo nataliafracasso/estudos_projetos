@@ -1,9 +1,15 @@
 @charset "UFT-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
 *{
     padding: 0px;
     margin: 0px;
 }
+
+
 /* Colors
 
 ### Primary
@@ -15,7 +21,130 @@
 
 - Very dark blue: hsl(212, 21%, 14%)
 - Dark grayish blue: hsl(228, 12%, 48%)
-- White: hsl(0, 0%, 100%)
+- 
 */
+
+:root{
+  --cor01: #3c8067;
+  --cor02: #f2ebe3;
+  --cor03: #1c232b;
+  --cor04: #6c7289;
+  --cor05: white;
+  --cor06: #4cac88;
+
+  --font-family: 'Montserrat', sans-serif;
+  --font-destaque: 'Fraunces', serif;
+}
+
+
+body{
+   background-color: var(--cor02);
+   font-family: var(--font-family);
+}
+main{
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    height: 100vh;
+}
+section{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color:var(--cor05);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.377);
+    width: 350px;
+    height: 635px;
+    overflow: hidden;
+    border-radius: 20px;
+    transform: translate(-50%,-50%);
+}
+div#img{
+    display: block;
+    background:white url(imagens/image-product-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 250px;
+}
+div#conteudo{
+    color: var(--cor04);
+    padding: 20px;
+    font-size:14px;
+}
+div#conteudo > h1{
+    color: var(--cor03);
+    font-family: var(--font-destaque);
+    font-size: 2.3em;
+    font-weight: bold;
+    padding-top:10px; 
+    padding-bottom: 15px;  
+}
+p#destaque{
+   letter-spacing:5px;
+}
+div#conteudo >p{
+   text-align: justify;
+   line-height: 1.6em;
+}
+div#valor {
+    
+    color: var(--cor03);
+    padding: 0px 15px 10px 15px;
+}
+div#valor >h1{
+    display: inline-block;
+    color: var(--cor01);
+    font-family: var(--font-destaque);
+    font-size: 2em;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+div#valor >p{
+    display: inline-block;
+    color: var(--cor04);
+    font-size: 15px;
+    padding-left: 20px;
+   
+}
+div#valor > button{
+    display: block;
+    background-color: #3c8067;
+    border: none;
+    border-radius: 10px;
+    margin: auto;
+    width: 320px;
+    height: 50px;
+}
+div#valor > button >p{
+    display: inline-block;
+    color: white;
+    font-size: 17px;
+    padding-left: 5px;
+}
+div#valor > button:hover{
+    background-color: var(--cor06);
+}
+/*Tela desktop*/
+@media screen and (min-width:900px){
+    
+    section{
+        width: 55vw;
+        height: 450px;
+    }
+    div#img{
+        float: left;
+        width: 50%;
+        height: 100%;
+        background: white url(imagens/image-product-desktop.jpg);
+        background-position: center center;
+        background-repeat: no repeat;
+        background-size: cover;
+    }
+    
+    
+}
+
+
 
 
