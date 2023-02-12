@@ -78,15 +78,15 @@ section > div#conteudo{
 div#conteudo > h1{
     font-family: var(--font-padrao);
     color: var(--cor04);
+    font-weight: normal;
     padding-bottom: 15px; 
     letter-spacing:5px; 
-    font-weight: normal;
 }
 div#conteudo > h2{
     font-family: var(--font-destaque);
     font-size: 2em;
-    color: var(--cor03);
     font-weight: bold;
+    color: var(--cor03);
     padding-right: 10px;
     padding-bottom: 20px;
 }
