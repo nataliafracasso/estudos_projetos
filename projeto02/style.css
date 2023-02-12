@@ -7,6 +7,7 @@
 *{
     padding: 0px;
     margin: 0px;
+    font-size: 14px;
 }
 
 
@@ -43,9 +44,10 @@ body {
 }
 main{
     position: relative;
-    height: 100vh;
-    padding-top: 30px;
-    padding-bottom: 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
    
 }
 section{
@@ -55,7 +57,7 @@ section{
     left: 50%;
     background-color:var(--cor05);
     width: 355px;
-    height: 660px;
+    height: 630px;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.377);
@@ -72,54 +74,53 @@ section > div#conteudo{
     display: block;
     color: var(--cor04);
     padding: 25px;
-    font-size:14px;
 }
-.destaque{
-    letter-spacing:5px;
-}
-
 div#conteudo > h1{
-    font-family: var(--font-destaque);
-    font-size: 2.3em;
-    color: var(--cor03);
-    padding-bottom: 15px;  
+    font-family: var(--font-padrao);
+    color: var(--cor04);
+    padding-bottom: 15px; 
+    letter-spacing:5px; 
+    font-weight: normal;
 }
-h2{
-    display: inline-block;
-    color: var(--cor01);
+div#conteudo > h2{
     font-family: var(--font-destaque);
-    font-size: 2.5em;
+    font-size: 2em;
+    color: var(--cor03);
     font-weight: bold;
+    padding-right: 10px;
+    padding-bottom: 20px;
 }
 div#conteudo >p{
    font-family: var(--font-padrao);
-   font-size: 14px;
    text-align: left;
    line-height: 1.6em;
-   padding-right: 10px;
    padding-bottom: 20px;
 }
-div#conteudo > p#grupo{
-    display: inline-block;
-    padding-left: 9px;
+strong{
+    font-family: var(--font-destaque);
+    font-size: 2em;
+    color: var(--cor01);
+}
+del{
+    padding-left: 15px;
+    
 }
 button{
-    display: block;
     width: 300px;
     height: 50px;
     background-color: #3c8067;
     border: none;
     border-radius: 10px;
-    margin-right: 30px;
+    margin-top: 20px;  
 }
-button >p{
+button{
     display: inline-block;
     color: white;
-    font-size: 17px;
     padding-left: 5px;
 }
 button:hover{
     background-color: var(--cor06);
+    cursor: pointer;
 }
 /*Tela desktop*/
 
@@ -127,7 +128,7 @@ button:hover{
     section{
         
         width: 650px;
-        height: 500px;
+        height: 460px;
         
     }
     section > div#img{
@@ -147,7 +148,7 @@ button:hover{
        width: 38%;
        padding-top: 35px;
     }
-    section > div#conteudo >h1{
+    section > div#conteudo >h2{
         padding-bottom: 25px;
         padding-right: 50px;
     }
@@ -155,8 +156,8 @@ button:hover{
         padding-bottom: 20px;
     }
     button{
-        width: 230px;
-        margin-top: 10px;
+        width: 250px;
+        margin-top: 25px;
         margin-right: 100px;
     }
 }
