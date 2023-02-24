@@ -1,1 +1,77 @@
 @charset "UFT-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+:root{
+    --cor01: hsl(215, 51%, 70%);
+    --cor02: hsl(178, 100%, 50%);
+    --cor03: hsl(217, 54%, 11%);
+    --cor04: hsl(216, 50%, 16%);
+    --cor05: hsl(215, 32%, 27%);
+    --cor06: hsl(0, 0%, 100%);
+}
+
+body{
+   min-height: 100vh;
+   background-color: var(--cor03);
+   font-size: 17px;
+   font-family: 'Outfit', sans-serif;
+}
+body, main{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+}
+main{
+    width: 380px;
+    height: 600px;
+    background-color: hsla(215, 55%, 10%, 0.651);
+    border-radius: 15px;
+}
+section#card{
+    width: 320px;
+    height: 550px ;
+    background-color: var(--cor04);
+    border-radius: 15px;
+    box-shadow: 15px 16px 1px rgba(0, 0, 0, 0.082);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+section#img{
+    background: var(--cor05) url(images/image-equilibrium.jpg) center center no-repeat;
+    background-size: cover;
+    height: 260px;
+    width: 270px;
+    border-radius: 10px;   
+}
+section#conteudo h1{
+    color: var(--cor06);
+    padding: 20px 5px 5px 20px;
+}
+section#conteudo p{
+    padding: 15px 15px 20px 15px;
+    font-weight: 300;
+    color: var(--cor01);
+}
+section#conteudo hr{
+    width: 250px;
+    margin: auto;
+    color: var(--cor03);
+}
+.container, div#img01, div#img02{
+    display: flex;
+    justify-content: space-evenly;
+    padding: none;
+}
+
+
+
+
