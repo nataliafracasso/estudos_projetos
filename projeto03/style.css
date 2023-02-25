@@ -30,7 +30,7 @@ body, main{
 main{
     width: 380px;
     height: 630px;
-    background-color: hsla(215, 55%, 10%, 0.651);
+    background-color:  hsla(215, 55%, 10%, 0.651);
     border-radius: 15px;
     margin: 20px;
 }
@@ -39,7 +39,7 @@ section#card{
     height: 550px ;
     background-color: var(--cor04);
     border-radius: 15px;
-    box-shadow: 15px 16px 1px rgba(0, 0, 0, 0.082);
+    box-shadow: 15px 16px 5px rgba(0, 0, 0, 0.082);
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -110,12 +110,12 @@ div#img:hover{
     cursor: pointer;
 }
 
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 300px) and (max-width:500px) {
     main{
-        width: 380px;
-        height: 500px;
+        width: 375px;
+        height: 520px;
     }
     section#card{
-        box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.082);
+        box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.082);
     }
 }
