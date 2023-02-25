@@ -40,7 +40,7 @@ section#card{
     height: 550px ;
     background-color: var(--cor04);
     border-radius: 15px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.082);
+    box-shadow: 12px 15px 5px rgba(0, 0, 0, 0.082);
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -116,13 +116,3 @@ div:hover{
     
 }
 
-@media screen and (min-width:400px) and (max-width:1140px){
-    main{
-        width: 380px;
-        height: 670px;
-        margin: 10px;
-    }
-    section#card{
-        box-shadow: 15px 15px 5px rgba(0, 0, 0, 0.082);
-    }
-}
