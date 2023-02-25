@@ -27,8 +27,8 @@ body, main{
 }
 
 main{
-    width: 380px;
-    height: 630px;
+    width: 360px;
+    height: 640px;
     background-color: hsla(215, 55%, 10%, 0.651);
     border-radius: 15px;
 }
@@ -59,10 +59,9 @@ section#conteudo .text-padrao{
 section#conteudo h1{
     color: var(--cor06);
 }
-section#conteudo hr{
-    width: 250px;
-    margin: auto;
-    color: var(--cor03);
+.container, .lina-horizontal{
+    
+    border: 1px solid var(--cor01);
 }
 .container, .icon{
     display: flex;
@@ -80,11 +79,16 @@ section#conteudo hr{
 .avatar{
   display: flex;
   align-items: center;
+  font-weight: 300;
   padding: 20px 10px 10px 25px; 
 }
-#avatar{
+.avatar > img#avatar{
   width: 15%;
   border: 1px solid white;
   border-radius: 50%;
   margin-right: 5px; 
 }
+p:nth-child(3){
+    color: var(--cor06);
+}
+
