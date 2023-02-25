@@ -112,7 +112,7 @@ div#img:hover{
 
 @media screen and (min-width: 300px) {
     main{
-        width: 370px;
+        width: 380px;
         height: 500px;
     }
     section#card{
