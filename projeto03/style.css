@@ -108,5 +108,11 @@ p:nth-child(3):hover{
 }
 div#img:hover{
     cursor: pointer;
-    background-color: var(--cor02);
+}
+
+@media screen and (min-width: 300px;) {
+    main{
+        width: 360px;
+        height: 500px;
+    }
 }
