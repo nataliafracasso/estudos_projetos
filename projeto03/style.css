@@ -59,14 +59,15 @@ section#conteudo .text-padrao{
 section#conteudo h1{
     color: var(--cor06);
 }
-.container, .lina-horizontal{
-    
+section#conteudo #linha{
     border: 1px solid var(--cor01);
+    width: 277px;
+    margin: auto;
 }
 .container, .icon{
     display: flex;
     justify-content: space-between;
-    padding: 10px 10px 10px 25px;   
+    padding: 10px 10px 10px 25px;  
 }
 .icon, p{
     padding-left: 5px;
@@ -87,6 +88,10 @@ section#conteudo h1{
   border: 1px solid white;
   border-radius: 50%;
   margin-right: 5px; 
+
+}
+.avatar >p{
+    font-weight: 300;
 }
 p:nth-child(3){
     color: var(--cor06);
