@@ -29,7 +29,7 @@ body, main{
 }
 main{
     width: 380px;
-    height: 600px;
+    height: 630px;
     background-color: hsla(215, 55%, 10%, 0.651);
     border-radius: 15px;
 }
@@ -45,33 +45,37 @@ section#card{
     align-items: center;
     padding-top: 20px;
 }
-section#img{
+div#img{
     background: var(--cor05) url(images/image-equilibrium.jpg) center center no-repeat;
     background-size: cover;
     height: 260px;
     width: 270px;
     border-radius: 10px;   
 }
-section#conteudo h1{
-    color: var(--cor06);
-    padding: 20px 5px 5px 20px;
-}
-section#conteudo p{
-    padding: 15px 15px 20px 15px;
+section#conteudo .text-padrao{
     font-weight: 300;
     color: var(--cor01);
+    padding: 25px 15px 5px 30px;   
+}
+section#conteudo h1{
+    color: var(--cor06);
 }
 section#conteudo hr{
     width: 250px;
     margin: auto;
     color: var(--cor03);
 }
-.container, div#img01, div#img02{
+.container, .icon{
     display: flex;
-    justify-content: space-evenly;
-    padding: none;
+    justify-content: space-between;
+    font-weight: 700;
+    padding: 10px 10px 15px 25px;
 }
+.icon, p{
+    padding-left: 5px;
+    color: var(--cor01);
 
-
-
-
+}
+.color{
+    color: var(--cor02);
+}
