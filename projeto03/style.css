@@ -30,9 +30,9 @@ body, main{
 main{
     width: 380px;
     height: 630px;
-    background-color:hsla(215, 55%, 10%, 0.651);
+    background-color: hsla(215, 55%, 10%, 0.651);
     border-radius: 15px;
-    margin: 15px;
+    margin: 20px;
 }
 section#card{
     width: 320px;
@@ -63,13 +63,14 @@ section#conteudo h1{
 }
 section#conteudo #linha{
     border: 1px solid var(--cor01);
+    border-radius: 10px;
     width: 277px;
     margin: auto;
 }
 .container, .icon{
     display: flex;
     justify-content: space-between;
-    padding: 10px 10px 10px 25px;  
+    padding: 10px 10px 12px 25px;  
 }
 .icon, p{
     padding-left: 5px;
@@ -86,11 +87,10 @@ section#conteudo #linha{
   padding: 20px 10px 10px 25px; 
 }
 .avatar > img#avatar{
-  width: 15%;
+  width: 12%;
   border: 1px solid white;
   border-radius: 50%;
-  margin-right: 5px; 
-
+  margin-right: 10px; 
 }
 .avatar >p{
     font-weight: 300;
@@ -98,4 +98,15 @@ section#conteudo #linha{
 p:nth-child(3){
     color: var(--cor06);
 }
-
+section#conteudo h1:hover{
+    cursor: pointer;
+    color: var(--cor02);
+}
+p:nth-child(3):hover{
+    cursor: pointer;
+    color: var(--cor02);
+}
+div#img:hover{
+    cursor: pointer;
+    background-color: var(--cor02);
+}
