@@ -110,7 +110,7 @@ div#img:hover{
     cursor: pointer;
 }
 
-@media screen and (min-width: 300px;) {
+@media screen and (min-width: 300px) {
     main{
         width: 360px;
         height: 500px;
