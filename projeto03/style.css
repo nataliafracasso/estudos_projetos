@@ -15,22 +15,24 @@
     --cor05: hsl(215, 32%, 27%);
     --cor06: hsl(0, 0%, 100%);
 }
-
+body{
+    min-height: 100vh;
+    background-color: var(--cor03);
+    font-size: 17px;
+    font-family: 'Outfit', sans-serif;
+}
 body, main{
-   min-height: 100vh;
-   background-color: var(--cor03);
-   font-size: 17px;
-   font-family: 'Outfit', sans-serif;
    display:flex;
    justify-content: center;
    align-items: center;
 }
 
 main{
-    width: 360px;
-    height: 640px;
-    background-color: hsla(215, 55%, 10%, 0.651);
+    width: 380px;
+    height: 630px;
+    background-color:hsla(215, 55%, 10%, 0.651);
     border-radius: 15px;
+    margin: 15px;
 }
 section#card{
     width: 320px;
@@ -47,8 +49,8 @@ section#card{
 div#img{
     background: var(--cor05) url(images/image-equilibrium.jpg) center center no-repeat;
     background-size: cover;
-    height: 260px;
-    width: 270px;
+    height: 265px;
+    width: 275px;
     border-radius: 10px;   
 }
 section#conteudo .text-padrao{
