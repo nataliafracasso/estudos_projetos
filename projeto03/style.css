@@ -30,7 +30,7 @@ body, main{
 main{
     width: 380px;
     height: 630px;
-    background-color:  hsla(215, 55%, 10%, 0.651);
+    background-color:hsla(215, 55%, 10%, 0.651);
     border-radius: 15px;
     margin: 20px;
 }
@@ -110,8 +110,12 @@ div#img:hover{
     cursor: pointer;
 }
 
-@media screen and (min-width: 300px) and (max-width:650px) {
-    
+@media screen and (min-width: 300px) and (max-width:500px) {
+    main{
+        width: 380px;
+        height: 670px;
+        margin: 10px;
+    }
     section#card{
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.082);
     }
