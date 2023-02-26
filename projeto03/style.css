@@ -19,8 +19,8 @@
 body{
     min-height: 100vh;
     background-color: var(--cor03);
-    font-size: 17px;
     font-family: 'Outfit', sans-serif;
+    font-size: 17px;
     overflow: hidden;
 }
 body, main{
@@ -30,6 +30,7 @@ body, main{
 }
 
 main{
+    color: var(--cor01);
     width: 380px;
     height: 630px;
     background-color:hsla(215, 55%, 10%, 0.651);
@@ -47,28 +48,34 @@ section#card{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 20px;  
 }
-div#img{
-   
-    background: var(--cor02) url(images/image-equilibrium.jpg) center center no-repeat;
-    background-size: cover;
+div#img, div#eye{
     height: 265px;
     width: 285px;
     border-radius: 10px; 
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.233);
-    
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.096); 
 }
-section#conteudo .text-padrao{
-    padding: 25px 15px 0px 30px;   
+div#img{
+    display: block;
+    opacity: 1;
+    background: url(images/image-equilibrium.jpg) center center no-repeat;
+    background-size: cover; 
+}
+div#eye{
+    position: absolute;
+    opacity: 0;
+    background: var(--cor02) url(images/icon-view.svg) center center no-repeat;
+    background-size: auto;
 }
 section#conteudo > h1{
+    padding: 25px 15px 0px 30px;  
     font-weight: 700;
     color: var(--cor06);
 }
 section#conteudo > p{
     font-weight: 300;
-    color: var(--cor01);
+    padding: 20px 15px 0px 30px;  
 }
 section#conteudo #linha{
     border: 1px solid var(--cor01);
@@ -79,14 +86,15 @@ section#conteudo #linha{
 .container, .icon{
     display: flex;
     justify-content: space-between;
-    padding: 15px 10px 12px 20px;  
+    flex-wrap: nowrap;
+    padding: 15px 10px 12px 15px;  
 }
-.icon, p{
-    padding-left:6px;
-    color: var(--cor01);
-    font-weight: 700;
+.icon p{
+    font-size: 15px;
+    font-weight: 400;
+    padding-left:5px;
 }
-.color{
+.icon .color{
     color: var(--cor02);
 }
 .avatar{
@@ -102,7 +110,8 @@ section#conteudo #linha{
   margin-right: 10px; 
 }
 .avatar >p{
-    font-weight: 300;
+    font-weight: 400;
+    padding-right: 5px;
 }
 p:nth-child(3){
     color: var(--cor06);
@@ -115,6 +124,13 @@ p:nth-child(3):hover{
     cursor: pointer;
     color: var(--cor02);
 }
-div#img{
+#img:hover {
+    cursor: pointer;   
+    transition: 0.5s ease;
+    opacity: 1;
+}
+#eye:hover {
     cursor: pointer;
+    transition: 0.5 ease;
+    opacity: 0.6;
 }
