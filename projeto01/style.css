@@ -127,7 +127,7 @@ footer p{
     font-size: 1.2em;
     padding-bottom: 5px;
 }
-@media screen and (min-width: 370px) and(max-width:450){
+@media screen and (min-width: 370px) and(max-width:470){
     header h1{
         font-size: 2em;
     }
@@ -138,6 +138,6 @@ footer p{
         font-size: 18px;
     }
     .fontcenter, .fontepadrao, .aside, footer p{
-        font-size: 17px;
+        font-size: 15px;
     }
 }
