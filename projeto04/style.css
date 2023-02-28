@@ -12,7 +12,7 @@
     --Cyan: hsl(180, 62%, 55%);
     --Orange: hsl(34, 97%, 64%);
     --Blue: hsl(212, 86%, 64%);
-    --Veri: hsl(234, 12%, 34%);
+    --cinza: hsl(234, 12%, 34%);
     --Grayish: hsl(229, 6%, 66%);
     --Very: hsl(0, 0%, 98%);
 
@@ -30,36 +30,34 @@ body{
     min-height: 100vh;
     background-color: var(--Very);
     font-size: 15px;
-    color: var(--Veri);
+    color: var(--Grayish);
     font-family: var(--font-padrao);
 }
-header{
-    padding:0px 10px 5px 10px;
-}
-header h1{
-    text-align: center;
-    font-weight: 200;
-    color: var(--Veri);   
-}
-header h2{
-    text-align: center;
-    font-weight: 700;
-    font-size: 2.1em;
-}
-header p{
-    color: var(--Grayish);
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 2em;
-    text-align: center;
-    padding: 30px 30px 30px 30px;   
-}
 main {
-    background-color: var(veri);
     width: 450px;
     padding: 40px 10px 40px 10px;
 }
+header{
+    padding:30px 10px 30px 10px;
+    text-align: center;
+}
+header h1{
+    font-weight: 200;
+    color: var(--cinza);   
+}
+header h2{
+    font-weight: 700;
+    font-size: 2.1em;
+    color: var(--cinza);
+}
+header p{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 2em;
+    padding: 30px 30px 10px 30px;   
+}
 .box{
+    position: relative;
     background-color: white;
     width: 350px;
     height: 250px;
@@ -67,10 +65,27 @@ main {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.096);
 }
 .box h2{
+    color: var(--cinza);
     padding:20px 20px 10px 20px;
 }
 .box p{
-    color: var(--Grayish);
     padding: 0px 0px 35px 20px;
+}  
+img{
+    position: absolute;
+    top: 65%;
+    left: 80%;
+    transform: translate(-50%);
+} 
+#supervisor{ 
+    border-top: 5px solid var(--Cyan);
 }
-
+#team{
+    border-top: 5px solid var(--Red);
+}
+#karma{
+    border-top: 5px solid var(--Orange);
+}
+#calculator{
+    border-top: 5px solid var(--Blue);
+}
