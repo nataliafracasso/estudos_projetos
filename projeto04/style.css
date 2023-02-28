@@ -24,7 +24,7 @@ body, main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 40px;
 }
 body{
     min-height: 100vh;
@@ -32,13 +32,15 @@ body{
     font-size: 15px;
     color: var(--Grayish);
     font-family: var(--font-padrao);
+    
 }
 main {
     width: 450px;
     padding: 40px 10px 40px 10px;
+
 }
 header{
-    padding:30px 10px 30px 10px;
+    padding:30px 15px 30px 15px;
     text-align: center;
 }
 header h1{
@@ -54,7 +56,7 @@ header p{
     font-size: 17px;
     font-weight: 400;
     line-height: 2em;
-    padding: 30px 30px 10px 30px;   
+    padding: 30px 30px 10px 0px;   
 }
 .box{
     position: relative;
@@ -63,6 +65,7 @@ header p{
     height: 250px;
     border-radius: 10px;  
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.096);
+    margin-bottom: 30px;
 }
 .box h2{
     color: var(--cinza);
