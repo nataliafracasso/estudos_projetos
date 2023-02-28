@@ -32,34 +32,45 @@ body{
     font-size: 15px;
     color: var(--Veri);
     font-family: var(--font-padrao);
-    gap: 40px;
+}
+header{
+    padding:0px 10px 5px 10px;
 }
 header h1{
     text-align: center;
+    font-weight: 200;
+    color: var(--Veri);   
+}
+header h2{
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.1em;
 }
 header p{
     color: var(--Grayish);
     font-size: 17px;
+    font-weight: 400;
     line-height: 2em;
     text-align: center;
     padding: 30px 30px 30px 30px;   
 }
 main {
     background-color: var(veri);
-    width: 430px;
+    width: 450px;
     padding: 40px 10px 40px 10px;
 }
 .box{
-    background-color: var(--Very);
+    background-color: white;
     width: 350px;
     height: 250px;
     border-radius: 10px;  
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.171);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.096);
 }
 .box h2{
-    padding: 20px ;
+    padding:20px 20px 10px 20px;
 }
 .box p{
     color: var(--Grayish);
     padding: 0px 0px 35px 20px;
 }
+
