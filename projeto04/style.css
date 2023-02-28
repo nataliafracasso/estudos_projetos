@@ -12,7 +12,7 @@
     --Cyan: hsl(180, 62%, 55%);
     --Orange: hsl(34, 97%, 64%);
     --Blue: hsl(212, 86%, 64%);
-    --Very: hsl(234, 12%, 34%);
+    --Veri: hsl(234, 12%, 34%);
     --Grayish: hsl(229, 6%, 66%);
     --Very: hsl(0, 0%, 98%);
 
@@ -30,17 +30,20 @@ body{
     min-height: 100vh;
     background-color: var(--Very);
     font-size: 15px;
+    color: var(--Veri);
+    font-family: var(--font-padrao);
     display: flex;
     gap: 40px;
 }
 header h1{
-    padding: 50px 30px 0px 30px;
+    text-align: center;
+    padding: 50px 20px 0px 20px;
 }
 header p{
     line-height: 2em;
     font-size: 17px;
     text-align: center;
-    padding: 0px 30px 0px 30px;
+    margin: 0px 30px 0px 30px;
 }
 main {
     background-color: antiquewhite;
