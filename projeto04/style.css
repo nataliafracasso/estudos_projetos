@@ -19,7 +19,7 @@
     --font-padrao: 'Poppins', sans-serif;
 }
 
-body, main, #container{
+body, main, #container, #column{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,7 +35,7 @@ body{
     
 }
 main {
-    width: 450px;
+    width: 470px;
     padding: 20px 10px;
     margin:20px;
 }
