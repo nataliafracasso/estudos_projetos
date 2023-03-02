@@ -28,6 +28,8 @@ body, main, #container, #column{
 }
 body{
     min-height: 100vh;
+    min-width: 100vw;
+    overflow: hidden;
     background-color: var(--Very);
     font-size: 15px;
     color: var(--Grayish);
@@ -44,6 +46,7 @@ header{
     text-align: center;
 }
 header h1{
+    color: var(--cinza);
     font-weight: 200; 
 }
 header h2{
