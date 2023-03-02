@@ -28,8 +28,6 @@ body, main, #container, #column{
 }
 body{
     min-height: 100vh;
-    min-width: 100vw;
-    overflow: hidden;
     background-color: var(--Very);
     font-size: 15px;
     color: var(--Grayish);
