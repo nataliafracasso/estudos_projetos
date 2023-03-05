@@ -42,15 +42,50 @@ main{
     align-items: center;
 }
 #header{
-    display: block;
-    background-color: var(--Lightslateblue);
-    min-height: 400px;
+    background:linear-gradient( to bottom, var(--Lightslateblue), var(--Lightroyalblue));
+    min-height: 390px;
+    min-width: 200px;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.39);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
 }
 #header h1{
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--Lightlavender);   
+}
+#circle{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    padding: 20px;
+    background:linear-gradient(to bottom, var(--Violetblue), var(--Persianblue))
+}
+#circle p:nth-child(1){
+    font-size: 3em;
     color: white;
+    font-weight: 700;
+    padding-top: 10px;
+}
+#circle p:nth-child(2){
+    color:var(--Lightlavender);
+    font-size: 15px;
+    font-weight:700;
+    padding-top: 5px;
+}
+#conteudo h2{
+    color: white;
+    font-weight: 700;
+    padding-top: 10px;
+}
+#conteudo p{
+    color: var(--Lightlavender);
     text-align: center;
-    padding-top: 30px;
+    padding: 15px 25px 0px 25px;
 }
