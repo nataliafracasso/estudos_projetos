@@ -1,5 +1,10 @@
 @charset "UFT-8";
 
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
 
 :root{
@@ -26,4 +31,26 @@ body{
     background-color: var(--Paleblue);
     font-size: 18px;
     font-family: var(--font-padrao);
+    display: flex;
+}
+main{
+    background-color: var(--White);
+    min-height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#header{
+    display: block;
+    background-color: var(--Lightslateblue);
+    min-height: 400px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+#header h1{
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
 }
