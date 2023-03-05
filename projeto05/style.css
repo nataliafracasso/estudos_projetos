@@ -10,11 +10,6 @@
 :root{
     --font-padrao: 'Hanken Grotesk', sans-serif;
 
-    --Light: hsl(0, 100%, 67%);
-    --Orangey: hsl(39, 100%, 56%);
-    --Green: hsl(166, 100%, 37%);
-    --Cobalt: hsl(234, 85%, 45%);
-
     --Lightslateblue: hsl(252, 100%, 67%);
     --Lightroyalblue: hsl(241, 81%, 54%);
     --Violetblue: hsla(256, 72%, 46%, 1);
@@ -43,7 +38,7 @@ main{
 }
 #header{
     background:linear-gradient( to bottom, var(--Lightslateblue), var(--Lightroyalblue));
-    min-height: 390px;
+    min-height: 400px;
     min-width: 200px;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
@@ -67,17 +62,18 @@ main{
     padding: 20px;
     background:linear-gradient(to bottom, var(--Violetblue), var(--Persianblue))
 }
-#circle p:nth-child(1){
+#circle h2:nth-child(1){
     font-size: 3em;
     color: white;
     font-weight: 700;
     padding-top: 10px;
 }
-#circle p:nth-child(2){
+#circle > p{
     color:var(--Lightlavender);
     font-size: 15px;
     font-weight:700;
     padding-top: 5px;
+    
 }
 #conteudo h2{
     color: white;
@@ -96,7 +92,7 @@ main{
     align-content: center;
     align-items:flex-start;
     gap: 30px;
-    padding-left: 20px;
+    font-weight: 700;
 }
 #container h3{
     padding-top: 30px;  
@@ -105,12 +101,32 @@ main{
     min-width: 410px;
     min-height: 60px;
     border-radius: 15px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.096);
     background-color: aqua;
-    display: flex;
+    /*display: flex;
     flex-direction: row;
     align-items: center; 
-    justify-content: space-evenly;
+    justify-content: space-evenly; */
     
+}
+.box > img, p{
+    display: inline-block;
+    text-align: center;
+    padding-top: 15px;
+   
+}
+#reaction{
+    background-color: hsla(0, 100%, 67%, 0.082);
+}
+#memory{
+    background-color: hsla(39, 100%, 56%, 0.048);
+
+}
+#verbal{
+   background-color: hsla(166, 100%, 37%, 0.075); 
+}
+#visual{
+  background-color: hsla(234, 85%, 45%, 0.075);
 }
 #button{
     width: 370px;
